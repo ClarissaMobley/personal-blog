@@ -1,4 +1,9 @@
-:root {
+:root[data-theme="light"] {
+
+    --background-light: white;
+    --text-color: black;
+
+    --border-color: black;
 
     --switch-bg: #F5F5F6;
     --switch-circle-bg: #FFD371;
@@ -7,21 +12,56 @@
     --icon-moon: #B1B0B5;
 }
 
-header{
+:root[data-theme="dark"] {
+
+    --background-dark: black;
+    --text-color: white;
+
+    --border-color: white;
+
+    --switch-bg: #2D2C35;
+    --switch-circle-bg: #7190FF;
+    --switch-circle-pos: 2.88rem;
+    --icon-sun: #B1B0B5;
+    --icon-moon: #DCE3FF;
+}
+
+body {
+    background-color: var(--background-dark);
+}
+
+
+header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: 3px solid black;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 12px;
+    background: 
+        linear-gradient(to right, var(--border-color), var(--border-color)),
+        linear-gradient(to right, var(--border-color), var(--border-color));
+    background-size: 4px 4px, 4px 4px;
+    background-position: bottom, top;
+    background-repeat: repeat-x;
 }
 
 .theme-switcher {
     background-color: var(--switch-bg);
-    width: 85px;
+    width: 75px;
     height: 30px;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
     cursor: pointer;
     padding: 4px;
     position: relative;
@@ -47,7 +87,7 @@ header{
 .icon-sun {
     fill: var(--icon-sun);
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 6px;
 }
 
 .icon-moon {
