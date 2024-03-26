@@ -1,0 +1,36 @@
+:root {
+
+    --switch-bg: #F5F5F6;
+    --switch-circle-bg: #FFD371;
+    --icon-sun: #997F44;
+    --icon-moon: #B1B0B5;
+}
+
+
+.theme-switcher {
+    background-color: var(--switch-bg);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+    padding: 4px;
+    position: relative;
+}
+
+.theme-switcher::before {
+    content:'';
+    position: absolute;
+    width: 2.22rem;
+    height: 2.22rem;
+    background-color: var(--switch-circle-bg);
+    border-radius: 50px;
+}
+
+.icon-sun {
+    fill: var(--icon-sun);
+}
+
+.icon-moon {
+    fill: var(--icon-moon)
+}
