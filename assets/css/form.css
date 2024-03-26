@@ -1,3 +1,15 @@
+:root[data-theme="light"] {
+
+    --submit: black;
+    --submit-color: white;
+}
+
+:root[data-theme="dark"] {
+
+    --submit: white;
+    --submit-color: black;
+}
+
 .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,14 +48,46 @@
 }
 
 .rightside {
+    display: flex;
+    flex-direction: column;
     border-left: 4px solid var(--border-color);
     margin-left: 8px;
 }
 
 .rightside p {
     text-align: center;
+    width: 100%;
     font-size: 30px;
-    margin-top: 200px;
-    margin-left: 200px;
+    margin-top: 175px;
     white-space: nowrap;
 }
+
+.container {
+    align-items: center;
+    width: 100%;
+}
+
+input[type=text], select, textarea {
+    width: 600px;
+    padding: 12px;
+    box-shadow: 1px 1px gray;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: horizontal;
+  }
+  
+  button[type=submit] {
+    background-color: var(--submit);
+    color: var(--submit-color);
+    width: 600px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  #content {
+    height: 150px;
+  }
