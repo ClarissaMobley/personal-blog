@@ -27,8 +27,6 @@
 }
 
 :root {
-    --body-font: "Roboto", sans-serif;
-
     --default-transition: color .3s ease-in-out, 
     background-color .3s ease-in-out, border-color .3s ease-in-out, 
     fill .3s ease-in-out, transform .3s ease-in-out;
@@ -128,9 +126,20 @@ header::after {
     margin: 130px;
     height: 60%;
     width: 60%;
-    background-color: #bbb;
+    background-image: linear-gradient(orange 40%, grey);
     border-radius: 50%;
     display: inline-block;
+  }
+
+  .dot p {
+    line-height: 350px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-color: black;
+
   }
 
 .rightside {
