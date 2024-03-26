@@ -34,7 +34,7 @@
 
 body {
     background-color: var(--background);
-    font: var(--body-font);
+    font-family:"Roboto", sans-serif;
     color: var(--color);
 }
 
@@ -103,46 +103,4 @@ header::after {
 
 .icon-moon {
     fill: var(--icon-moon)
-}
-
-.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.leftside, .rightside {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-}
-
-.leftside {
-    border-right: 4px solid var(--border-color);
-    margin-right: 8px;
-    align-items: center;
-}
-
-.dot {
-    margin: 130px;
-    height: 60%;
-    width: 60%;
-    background-image: linear-gradient(orange 40%, grey);
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-  .dot p {
-    line-height: 350px;
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-    color: white;
-    -webkit-text-stroke-width: .75px;
-    -webkit-text-stroke-color: black;
-
-  }
-
-.rightside {
-    border-left: 4px solid var(--border-color);
-    margin-left: 8px;
 }
