@@ -2,13 +2,22 @@
 
     --switch-bg: #F5F5F6;
     --switch-circle-bg: #FFD371;
+    --switch-circle-pos: 0.22rem;
     --icon-sun: #997F44;
     --icon-moon: #B1B0B5;
 }
 
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
 
 .theme-switcher {
     background-color: var(--switch-bg);
+    width: 85px;
+    height: 30px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -16,6 +25,7 @@
     cursor: pointer;
     padding: 4px;
     position: relative;
+    margin-right: 20px;
 }
 
 .theme-switcher::before {
@@ -25,10 +35,19 @@
     height: 2.22rem;
     background-color: var(--switch-circle-bg);
     border-radius: 50px;
+    z-index: 0;
+    left: 0;
+    transform: translateX(var(--switch-circle-pos));
+}
+
+.theme-switcher svg{
+    z-index: 1;
 }
 
 .icon-sun {
     fill: var(--icon-sun);
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .icon-moon {
