@@ -29,12 +29,14 @@
 }
 
 .dot {
-    margin: 130px;
+    margin: 0 auto;
     height: 450px;
     width: 450px;
     background-image: linear-gradient(orange 40%, grey);
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -82,7 +84,8 @@ input[type=text], select, textarea {
     border-radius: 2px;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: horizontal;
+    resize: vertical;
+    vertical-align: top;
   }
   
   button[type=submit] {
@@ -96,5 +99,5 @@ input[type=text], select, textarea {
   }
 
   #content {
-    height: 150px;
+    height: 100px;
   }
