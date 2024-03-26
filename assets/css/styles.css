@@ -27,7 +27,7 @@
 }
 
 :root {
-    --default-border-radius: 8px;
+    /* --default-border-radius: 8px; */
     --default-transition: color .3s ease-in-out, 
     background-color .3s ease-in-out, border-color .3s ease-in-out, 
     fill .3s ease-in-out, transform .3s ease-in-out;
@@ -102,4 +102,25 @@ header::after {
 
 .icon-moon {
     fill: var(--icon-moon)
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leftside, .rightside {
+    height: 100vh;
+    width: 100%;
+    margin-top: -16px; /* Adjust as needed */
+}
+
+.leftside {
+    border-right: 4px solid var(--border-color);
+    margin-right: 8px;
+}
+
+.rightside {
+    border-left: 4px solid var(--border-color);
+    margin-left: 8px;
 }
