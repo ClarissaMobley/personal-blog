@@ -12,8 +12,12 @@
 </head>
 
 <body>
+
+    <!-- header -->
     <header class="double-border">
         <div class="theme-switcher">
+
+            <!-- icons for toggle of light/dark mode -->
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="icon-sun">
                 <path d="M9.9995 0C10.3445 0 10.6245 0.28 10.6245 0.625V1.875C10.6245 2.04076 10.5587 2.19973 
@@ -68,44 +72,40 @@
 
 
         </div>
-
     </header>
 
     <main>
 
+        <!-- Left side of blog -->
         <div class="row">
-            <div class="col">
-                <div class="leftside">
-                    <span class="dot">
-                        <h1>My First Blog</h1>
-                    </span>
+            <div class="leftside">
+                <span class="dot">
+                    <h1>My First Blog</h1>
+                </span>
+            </div>
+
+
+        <!-- Right side of blog -->
+            <div class="rightside">
+                <p><b>What's on your mind?</b></p>
+
+                <div class="container">
+                    <form id="form">
+                        <label for="username">Username</label>
+                        <br><input type="text" id="username" name="username">
+
+                        <br><label for="title">Title</label>
+                        <br><input type="text" id="title" name="title">
+
+                        <br><label for="content">Content</label>
+                        <br><input type="text" id="content" name="content">
+
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
 
 
-            <div class="col">
-                <div class="rightside">
-                    <p><b>What's on your mind?</b></p>
-
-                    <div class="container">
-                        <form id="form">
-                            <label for="username">Username</label>
-                            <br><input type="text" id="username" name="username">
-
-                            <br><label for="title">Title</label>
-                            <br><input type="text" id="title" name="title">
-                            
-                            <br><label for="content">Content</label>
-                            <br><input type="text" id="content" name="content">
-
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div>
         </div>
 
     </main>
