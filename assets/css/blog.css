@@ -19,11 +19,12 @@ header h2 {
     left: 15px;
 }
 
-header button {
+#backbutton {
     background-color: var(--back);
     color: var(--back-color);
     padding: 9px;
     border: none;
     border-radius: 2px;
     margin-right: 15px;
+    cursor: pointer;
 }

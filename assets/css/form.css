@@ -10,7 +10,7 @@
     --submit-color: black;
 }
 
-.row {
+.col {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -30,8 +30,9 @@
 
 .dot {
     margin: 0 auto;
-    height: 450px;
-    width: 450px;
+    margin-top: 100px;
+    height: 475px;
+    width: 475px;
     background-image: linear-gradient(orange 40%, grey);
     border-radius: 50%;
     display: flex;
@@ -39,10 +40,9 @@
     align-items: center;
 }
 
-
 .dot h1 {
-    line-height: 375px;
-    font-size: 45px;
+    margin-top: 50px;
+    font-size: 50px;
     font-weight: 800;
     text-align: center;
     color: white;
@@ -56,11 +56,17 @@
     margin-left: 8px;
 }
 
+.rightside h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
 .rightside p {
     text-align: center;
     width: 100%;
     font-size: 30px;
-    margin-top: 175px;
+    margin-top: 100px;
     white-space: nowrap;
 }
 
@@ -86,7 +92,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
     vertical-align: top;
-  }
+}
   
   button[type=submit] {
     background-color: var(--submit);
@@ -96,8 +102,8 @@ input[type=text], select, textarea {
     border: none;
     border-radius: 2px;
     cursor: pointer;
-  }
+}
 
   #content {
     height: 100px;
-  }
+}
