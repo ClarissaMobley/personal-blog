@@ -3,3 +3,4 @@ document.getElementById('backButton').addEventListener('click', function() {
     // Go back to index.html
     history.back();
 });
+
