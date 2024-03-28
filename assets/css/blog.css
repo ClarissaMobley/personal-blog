@@ -79,6 +79,24 @@ header h2 {
     border: 2px solid var(--border-color);
 }
 
+#addTitle {
+    margin-left: 15px;
+}
+
+#border-line {
+    width: 98%;
+    margin-left: 15px;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+#addContent {
+    margin-left: 25px;
+}
+
+#addUsername {
+}
+
 footer {
     display: flex;
     justify-content: flex-end;

@@ -4,16 +4,20 @@
     const content = document.getElementById('content');
 
 
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
+    function saveBlogPost() {
+        const blogPost = {
+            username: username.value,
+            title: title.value,
+            content: content.value.trim(),
+        };
 
-        const usernameValue = username.value;
-        const titleValue = title.value;
-        const contentValue = content.value;
+        localStorage.setItem('blogPost', JSON.stringify(blogPost));
+    }
 
-        localStorage.setItem('addUsername', usernameValue);
-        localStorage.setItem('addTitle', titleValue);
-        localStorage.setItem('addContent', contentValue);
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        saveBlogPost();
 
         window.location.href = 'blog.html';
 
@@ -21,5 +25,4 @@
         username.value = '';
         title.value = '';
         content.value = '';
-        
     });
