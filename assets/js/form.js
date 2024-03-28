@@ -3,23 +3,24 @@
     const title = document.getElementById('title');
     const content = document.getElementById('content');
 
-
+    // Function to save blog post to local storage
     function saveBlogPost() {
      const blogHistory = JSON.parse(localStorage.getItem("blogPost")) || []
 
-     
+        // Create new blog post object
         const blogPost = {
             username: username.value,
             title: title.value,
             content: content.value.trim(),
         };
         
-        blogHistory.push(blogPost)
+        // Add new blog post at the beginning of the list
+        blogHistory.unshift(blogPost);
 
         localStorage.setItem('blogPost', JSON.stringify(blogHistory));
     }
 
-
+    // Add event listener to submit form
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         saveBlogPost();

@@ -9,11 +9,13 @@ if (backButton) {
     });
 }
 
+// Add function to display blog post
 function init() {
     const blogPost = JSON.parse(localStorage.getItem('blogPost'));
 
     if (blogPost !== null) {
 
+        // Loop through the blog post array and display each post
         for (let i = 0; i < blogPost.length; i++) {
            document.querySelector(".blogPost").innerHTML += `
            <div class="box1">
@@ -33,4 +35,3 @@ function init() {
 
 
 init();
-

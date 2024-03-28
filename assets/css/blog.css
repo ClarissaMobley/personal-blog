@@ -1,3 +1,4 @@
+/* variable */
 :root[data-theme="light"] {
 
     --background: white;
@@ -20,6 +21,7 @@
     --back-color: black;
 }
 
+/* header */
 header {
     position: relative;
 }
@@ -39,6 +41,7 @@ header h2 {
     cursor: pointer;
 }
 
+/* Main */
 .blogPost {
     display: flex;
     flex-direction: column;
@@ -61,11 +64,11 @@ header h2 {
 
 #border-line {
     width: 98%;
-    /* margin-left: 15px; */
     height: 1px;
     background-color: var(--border-color);
 }
 
+/* footer */
 footer {
     display: flex;
     justify-content: flex-end;
