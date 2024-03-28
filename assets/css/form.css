@@ -125,3 +125,32 @@ input[type=text], select, textarea {
         border-left: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .dot {
+        height: 300px;
+        width: 300px;
+    }
+    .dot h1 {
+        font-size: 30px;
+    }
+    .rightside h1 {
+        font-size: 30px;
+    }
+    .rightside p {
+        font-size: 20px;
+    }
+    #form {
+        width: 300px;
+    }
+    input[type=text], select, textarea {
+        width: 300px;
+    }
+    button[type=submit] {
+        width: 300px;
+    }
+    #content {
+        height: 50px;
+    }
+    
+}
