@@ -35,7 +35,7 @@
     margin: 0 auto;
     margin-top: 100px;
     height: 475px;
-    max-width: 475px;
+    width: 475px;
     background-image: linear-gradient(orange 40%, grey);
     border-radius: 50%;
     display: flex;
