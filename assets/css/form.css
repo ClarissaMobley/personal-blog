@@ -108,4 +108,15 @@ input[type=text], select, textarea {
     height: 100px;
 }
 
-
+@media screen and (max-width: 1025px) {
+    .col {
+        display: flex;
+        flex-direction: column;
+    }  
+    .leftside {
+        border-right: none;
+    }
+    .rightside {
+        border-left: none;
+    }
+}

@@ -5,13 +5,18 @@
 
 
     function saveBlogPost() {
+     const blogHistory = JSON.parse(localStorage.getItem("blogPost")) || []
+
+     
         const blogPost = {
             username: username.value,
             title: title.value,
             content: content.value.trim(),
         };
+        
+        blogHistory.push(blogPost)
 
-        localStorage.setItem('blogPost', JSON.stringify(blogPost));
+        localStorage.setItem('blogPost', JSON.stringify(blogHistory));
     }
 
 
@@ -21,8 +26,4 @@
 
         window.location.href = 'blog.html';
 
-        // Clear the form fields after submit
-        username.value = '';
-        title.value = '';
-        content.value = '';
     });
