@@ -35,7 +35,7 @@
     margin: 0 auto;
     margin-top: 100px;
     height: 475px;
-    width: 475px;
+    max-width: 475px;
     background-image: linear-gradient(orange 40%, grey);
     border-radius: 50%;
     display: flex;
@@ -82,7 +82,7 @@
 
 /* form */
 #form {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: left;
 }
@@ -126,31 +126,3 @@ input[type=text], select, textarea {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .dot {
-        height: 300px;
-        width: 300px;
-    }
-    .dot h1 {
-        font-size: 30px;
-    }
-    .rightside h1 {
-        font-size: 30px;
-    }
-    .rightside p {
-        font-size: 20px;
-    }
-    #form {
-        width: 300px;
-    }
-    input[type=text], select, textarea {
-        width: 300px;
-    }
-    button[type=submit] {
-        width: 300px;
-    }
-    #content {
-        height: 50px;
-    }
-    
-}
