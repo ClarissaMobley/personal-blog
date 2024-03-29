@@ -22,15 +22,23 @@ function saveBlogPost() {
     return blogPost;
 }
 
+// Function to validate form fields
+function validateForm() {
+    if (username.value.trim() === '' || title.value.trim() === '' || content.value.trim() === '') {
+        alert('Please fill out all fields.');
+        return false; // Returning false prevents form submission
+    }
+
+    return true; // Return true if all fields are filled
+}
+
 // Add event listener to submit form
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const blogPost = saveBlogPost();
-
-    if (blogPost.username === '' || blogPost.title === '' || blogPost.content === '') {
-        alert('Please fill out all fields.');
-    } else {
+    // Check if form is valid before saving blog post
+    if (validateForm()) {
+        const blogPost = saveBlogPost();
         window.location.href = 'blog.html';
     }
 });
