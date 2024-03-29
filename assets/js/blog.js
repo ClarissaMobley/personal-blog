@@ -19,13 +19,13 @@ function init() {
         for (let i = 0; i < blogPost.length; i++) {
            document.querySelector(".blogPost").innerHTML += `
            <div class="box1">
-           <br><b><span id="addTitle">${blogPost[i].title}</span></b>
+           <br><b><span>${blogPost[i].title}</span></b>
            <div id="border-line"></div>
-           <br><i><span id="addContent">${blogPost[i].content}</span></i>
+           <br><i><span>${blogPost[i].content}</span></i>
            <br/>
            <br/>
            <br/>
-           Posted by: <span id="addUsername">${blogPost[i].username}</span>
+           Posted by: <span>${blogPost[i].username}</span>
            </div>`
         }
 
