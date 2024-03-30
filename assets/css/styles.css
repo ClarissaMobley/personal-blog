@@ -1,4 +1,5 @@
 /* Variables */
+
 :root[data-theme="light"] {
 
     --background: white;
@@ -40,6 +41,7 @@ body {
 }
 
 /* header */
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -64,6 +66,7 @@ header::after {
 }
 
 /* toggle */
+
 .theme-switcher {
     background-color: var(--switch-bg);
     width: 75px;

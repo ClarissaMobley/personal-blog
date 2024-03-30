@@ -1,4 +1,5 @@
 /* variable */
+
 :root[data-theme="light"] {
 
     --background: white;
@@ -22,6 +23,7 @@
 }
 
 /* header */
+
 header {
     position: relative;
 }
@@ -42,6 +44,7 @@ header h2 {
 }
 
 /* Main */
+
 .blogPost {
     display: flex;
     flex-direction: column;
@@ -69,6 +72,7 @@ header h2 {
 }
 
 /* footer */
+
 footer {
     display: flex;
     justify-content: flex-end;
